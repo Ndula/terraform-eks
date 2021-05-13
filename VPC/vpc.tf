@@ -10,7 +10,7 @@ resource "aws_vpc" "vpc" {
     Name = "demo_vpc"
   }
 }
-# IGW for demo_vpc
+# IGW (internet gateway)for demo_vpc
 resource "aws_internet_gateway" "vpc_igw" {
   vpc_id = aws_vpc.vpc.id
   tags = {
